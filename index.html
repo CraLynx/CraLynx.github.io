@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CraLynx</title>
+	<link rel="stylesheet" href="css/main.css">
+	<style>
+		body {
+   			padding: 0; 
+  			margin: 0;
+  		}	
+    </style>
+<script type="text/javascript" src="js/jquery-3.2.1.js"></script> <!--Подключение библиотеки Jquire-->
+<script type="text/javascript" src="js/AnchorScroller.js"></script> <!--Подключение файла с "якорем" и вращением-->
+<script type="text/javascript" src="js/rotate.js"></script> <!--Пока что не нужная вещь-->
+</head>
+<body>	
+	<header id="home" > <!-- Главная "секция"-->
+			<div id="wrapper" data-rotate="0">
+				<a href="javascript://0" data-scroll="#aboutme">
+					<div class="button" id="button1" data-rotate="0">
+						<span></span>
+					</div>
+				</a>
+		
+				<a href="javascript://0" data-scroll="#wins">
+					<div class="button" id="button2" data-rotate="90" >
+						<span></span>
+					</div>
+				</a>
+				<a href="javascript://0" data-scroll="#education">
+					<div class="button" id="button3" data-rotate="180">
+						<span></span>
+					</div>
+				</a>
+				<a href="javascript://0" data-scroll="#contact">
+					<div class="button" id="button4" data-rotate="270">
+						<span></span>
+					</div>
+				</a>
+	
+				<a href="javascript://0" data-scroll="#home" >
+					<div class="button" id="button5" data-rotate="360">
+						<span></span>
+					</div>
+				</a>
+			</div>
+
+		</header>
+
+
+
+		<section id="aboutme"></section> <!--Секция "об о мне"-->
+		<section id="wins"></section> <!--Секция "Достижений и проделанных работ"-->
+		<section id="education">				
+		</section><!--Секция "Образование и знаний"-->
+		<section id="contact"></section> <!--Секция "Связи со мной"-->
+		<footer class="footer">Hello</footer> <!--Подвал-->
+	
+	</body>
+</html>

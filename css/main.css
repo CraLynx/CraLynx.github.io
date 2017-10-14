@@ -1,0 +1,174 @@
+#wrapper {
+	border-radius: 50%;
+	height: 180px;
+	width: 180px;
+	overflow: hidden;
+	position: fixed;
+	top:25px;
+	left:25px;
+	transform: rotate(0deg);
+	transition: 1s;
+}
+#wrapper[data-rotate='90']{
+	transform: rotate(90deg);
+}
+
+@media (max-width: 780px) {
+	#wrapper{
+	height: 150px;
+	width: 150px;
+	}
+}
+@media (max-width: 420px) {
+	#wrapper{
+	height: 150px;
+	width: 150px;
+	left:calc(50% - 75px);
+	}
+}
+
+#button1 {
+	background-color: red;
+ 	border: 1px solid black;
+ 	border-top-left-radius: 100%;
+ 	top: 0;
+ 	left:0;
+
+}
+#button1 span{
+	background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;    
+ 	background-image: url(../image/Me.png);
+
+}
+
+#button2{
+	background-color: black;
+ 	border: 1px solid black;
+ 	border-top-right-radius: 100%;
+ 	top: 0;
+ 	right:0;
+}
+
+#button2 span{
+	background-size: 35%;
+    background-repeat: no-repeat;
+    background-position: 55% 55%;
+ 	background-image: url(../image/Cup.png);
+
+}
+
+#button3{
+    background-color: white;
+ 	border: 1px solid black;
+ 	border-bottom-right-radius: 100%;
+ 	bottom:  0;
+ 	right: 0;
+}
+#button3 span{
+	background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: 55% 55%;
+ 	background-image: url(../image/sahap.png);
+
+}
+
+#button4{
+	background-color: black;
+ 	bottom:0;
+ 	left:0;
+ 	border: 1px solid black;
+ 	border-bottom-left-radius: 100%;
+
+}
+
+#button4 span{
+	background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+ 	background-image: url(../image/Phone.png);
+
+}
+
+#button5{
+	border-radius: 50%;
+	background-color: rgb(161, 149, 149);
+ 	border-color: black; 
+ 	overflow:hidden;
+ 	transition: 1s;
+ 	top: 25%;
+    left: 25%;
+}
+
+#button5 span{
+	background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+ 	background-image: url(../image/Home.png);
+
+}
+
+#button5:hover{
+	background-color: rgb(255,255,255);
+}
+
+.button{
+cursor: pointer;
+position: absolute;
+height: 50%;
+width: 50%;
+
+}
+
+.button span {
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    transform: 0;
+    transition: 1s;
+}
+
+.button:hover{
+	transform: scale(1.1);
+	
+}
+
+#home{
+	background-size: cover;
+	background-image: url(../image/dezert.jpg);
+	height: 662px;
+}
+
+#aboutme{
+	background-size: cover;
+	background-image: url(../image/background.jpg);
+	height: 662px;
+
+}
+
+#wins{
+	background-size: cover;
+	background-image: url(../image/background1.jpg);
+	height: 662px;
+}
+
+#education{
+	height: 662px;
+}
+
+#contact{
+	height: 600px;
+}
+
+.footer{
+	height: 62px;
+	width: 100px;
+    margin-bottom: 48px;
+    color: #303030;
+    font-size: 14px;
+    text-align: center;
+    position: relative
+}
+
