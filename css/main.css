@@ -161,14 +161,14 @@ width: 50%;
 #aboutme{
 	background-size: cover;
 	background-image: url(../image/background.jpg);
-	height: 662px;
+	height: 100%;
 
 }
 
 #wins{
 	background-size: cover;
 	background-image: url(../image/background1.jpg);
-	height: 662px;
+	height: 100%;
 }
 
 #ImageInWins{
@@ -177,7 +177,7 @@ width: 50%;
 }
 
 #education{
-	height: 662px;
+	height: 100%;
 }
 
 #ImageInEducation{
