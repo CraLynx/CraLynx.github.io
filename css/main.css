@@ -155,7 +155,7 @@ width: 50%;
 #home{
 	background-size: cover;
 	background-image: url(../image/MainMenu.jpg);
-	height: 662px;
+	height: 100%;
 }
 
 #aboutme{
