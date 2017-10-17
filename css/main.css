@@ -9,8 +9,13 @@
 	transform: rotate(0deg);
 	transition: 1s;
 }
+
 #wrapper[data-rotate='90']{
 	transform: rotate(90deg);
+}
+
+#wrapper{
+z-index: 1;
 }
 
 @media (max-width: 780px) {
@@ -27,7 +32,7 @@
 	}
 }
 
-#button1 {
+#bAboutme {
 	background-color: red;
  	border: 1px solid black;
  	border-top-left-radius: 100%;
@@ -35,7 +40,7 @@
  	left:0;
 
 }
-#button1 span{
+#bAboutme span{
 	background-size: 50%;
     background-repeat: no-repeat;
     background-position: center;    
@@ -43,7 +48,7 @@
 
 }
 
-#button2{
+#bWins{
 	background-color: black;
  	border: 1px solid black;
  	border-top-right-radius: 100%;
@@ -51,7 +56,7 @@
  	right:0;
 }
 
-#button2 span{
+#bWins span{
 	background-size: 35%;
     background-repeat: no-repeat;
     background-position: 55% 55%;
@@ -59,14 +64,14 @@
 
 }
 
-#button3{
-    background-color: white;
+#bEducation{
+    background:white;
  	border: 1px solid black;
  	border-bottom-right-radius: 100%;
  	bottom:  0;
  	right: 0;
 }
-#button3 span{
+#bEducation span{
 	background-size: 40%;
     background-repeat: no-repeat;
     background-position: 55% 55%;
@@ -74,7 +79,7 @@
 
 }
 
-#button4{
+#bContact{
 	background-color: black;
  	bottom:0;
  	left:0;
@@ -83,7 +88,7 @@
 
 }
 
-#button4 span{
+#bContact span{
 	background-size: 50%;
     background-repeat: no-repeat;
     background-position: center;
@@ -91,7 +96,7 @@
 
 }
 
-#button5{
+#bHome{
 	border-radius: 50%;
 	background-color: rgb(161, 149, 149);
  	border-color: black; 
@@ -101,13 +106,25 @@
     left: 25%;
 }
 
-#button5 span{
+#bHome span{
 	background-size: 70%;
     background-repeat: no-repeat;
     background-position: center;
  	background-image: url(../image/Home.png);
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 #button5:hover{
 	background-color: rgb(255,255,255);
@@ -137,7 +154,7 @@ width: 50%;
 
 #home{
 	background-size: cover;
-	background-image: url(../image/dezert.jpg);
+	background-image: url(../image/MainMenu.jpg);
 	height: 662px;
 }
 
@@ -154,8 +171,19 @@ width: 50%;
 	height: 662px;
 }
 
+#ImageInWins{
+	background: url("http://widefon.com/_ld/20/62654251.jpg")no-repeat center center ;
+    background-size: cover;
+}
+
 #education{
 	height: 662px;
+}
+
+#ImageInEducation{
+	 background: url("http://widefon.com/_ld/20/62654251.jpg")no-repeat center center fixed;
+    background-size: cover;
+
 }
 
 #contact{
@@ -171,4 +199,26 @@ width: 50%;
     text-align: center;
     position: relative
 }
+
+html,
+body,
+.view {
+    height: 100%;
+}
+
+.view {
+    background: url("http://widefon.com/_ld/20/62654251.jpg")no-repeat center center;
+    background-size: cover;
+}
+
+.col-6{
+	background: #eee;
+	height: 662px;
+}
+
+.container{
+
+	
+}
+
 

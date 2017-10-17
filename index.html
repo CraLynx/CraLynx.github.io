@@ -1,60 +1,131 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>CraLynx</title>
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
 	<style>
 		body {
-   			padding: 0; 
-  			margin: 0;
+			padding: 0; 
+			margin: 0;
   		}	
     </style>
-<script type="text/javascript" src="js/jquery-3.2.1.js"></script> <!--Подключение библиотеки Jquire-->
-<script type="text/javascript" src="js/AnchorScroller.js"></script> <!--Подключение файла с "якорем" и вращением-->
-<script type="text/javascript" src="js/rotate.js"></script> <!--Пока что не нужная вещь-->
+
+<!--Подключение библиотеки Jquire-->
+<script type="text/javascript" src="js/jquery-3.2.1.js"></script> 
+<!-- Подключение Boostrap -->
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<!--Подключение файла с "якорем" и вращением-->
+<script type="text/javascript" src="js/AnchorScroller.js"></script>
+<!--Пока что не нужная вещь--> 
+<script type="text/javascript" src="js/rotate.js"></script> 
+
 </head>
-<body>	
-	<header id="home" > <!-- Главная "секция"-->
+	<body>	
+		<header id="home" id="ImageInHome" > <!-- Главная "секция"-->
 			<div id="wrapper" data-rotate="0">
-				<a href="javascript://0" data-scroll="#aboutme">
-					<div class="button" id="button1" data-rotate="0">
+				<a href="javascript://0" data-scroll="#aboutme">  <!--Кнопка об о мне-->
+					<div class="button" id="bAboutme" data-rotate="0">
 						<span></span>
 					</div>
 				</a>
 		
 				<a href="javascript://0" data-scroll="#wins">
-					<div class="button" id="button2" data-rotate="90" >
+					<!--Кнопка достижений и награды-->
+					<div class="button" id="bWins" data-rotate="90" > 
 						<span></span>
 					</div>
 				</a>
 				<a href="javascript://0" data-scroll="#education">
-					<div class="button" id="button3" data-rotate="180">
+					<!--Кнопка образования-->
+					<div class="button" id="bEducation" data-rotate="180">  
 						<span></span>
 					</div>
 				</a>
 				<a href="javascript://0" data-scroll="#contact">
-					<div class="button" id="button4" data-rotate="270">
+					<!--Кнопка связь со мной-->
+					<div class="button" id="bContact" data-rotate="270"> 
 						<span></span>
 					</div>
 				</a>
 	
-				<a href="javascript://0" data-scroll="#home" >
-					<div class="button" id="button5" data-rotate="360">
+				<a href="javascript://0" data-scroll="#home" >		
+					<!--Центральная кнопка "домой" начальная область страницы-->
+					<div class="button" id="bHome" data-rotate="360">
 						<span></span>
 					</div>
 				</a>
 			</div>
 
 		</header>
+		
+		<!--Секция "об о мне"-->
+		<section id="aboutme">
+			<div class="container-fluid" id="education">
+  				<div class="row ">
+   			 		<div class="col-6" id="ImageInEducation"></div>
+    		 		<div class="col-6">Another Text</div>
+   					<div class="w-100"></div>
+   				</div>
+			</div> 	
+		</section>
 
 
+		<!--Секция "Достижений и проделанных работ"--> 
+		<div class="container-fluid" id="wins">
+  			<div class="row ">
+   			 	<div class="col-6" id="ImageInWins"></div>
+    		 	<div class="col-6">Another Text1</div>
+   			 	<div class="w-100"></div>
+   			</div>
+		</div>
+		
+		<!--Секция "Образование и знаний"-->		
+		<div class="container-fluid" id="education">
+  			<div class="row ">
+   			 	<div class="col-6" id="ImageInWins"></div>
+    		 	<div class="col-6">Another Text2</div>
+   			 	<div class="w-100"></div>
+   			</div>
+		</div> 
+		
 
-		<section id="aboutme"></section> <!--Секция "об о мне"-->
-		<section id="wins"></section> <!--Секция "Достижений и проделанных работ"-->
-		<section id="education">				
-		</section><!--Секция "Образование и знаний"-->
-		<section id="contact"></section> <!--Секция "Связи со мной"-->
-		<footer class="footer">Hello</footer> <!--Подвал-->
+		<section id="contact">
+			 <div class="view">
+    		<!--Intro content-->
+		    	<div class="full-bg-img flex-center">
+		        	<ul>
+		           	 	<li>
+		             		<h1 class="h1-responsive">
+		             	   <!-- Заголовок -->
+		             		</h1>
+		             	</li> 
+
+		          	  	<li>
+		          	     	<p>
+		          	      	<!-- В контекст -->
+		          	      	</p>
+		          	 	</li>
+
+		          	  	<li>
+		          	      <!-- <a target="_blank" href="https://mdbootstrap.com/getting-started/" class="btn btn-primary btn-lg">Sign up!</a> -->
+		          	      <!-- <a target="_blank" href="https://mdbootstrap.com/material-design-for-bootstrap/" class="btn btn-default btn-lg">Learn more</a> -->
+		          	 	</li>
+		      		</ul>
+		    	</div>
+    						<!--/Intro content-->
+			</div>
+		</section> <!--Секция "Связи со мной"-->
+
+		
+		<footer class="footer">
+		Hello
+		<!--Content-->
+		</footer> <!--Подвал-->
 	
 	</body>
 </html>
