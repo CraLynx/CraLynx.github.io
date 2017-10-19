@@ -25,7 +25,6 @@ function slowScroll (id) {   //Функция для прокрутки стра
   }
  
 function WinResize() {
-
 	 $('#home').height($(window).height());
 	 $('#aboutme').height($(window).height());
 	 $('#wins').height($(window).height());

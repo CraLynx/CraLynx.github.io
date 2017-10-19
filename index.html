@@ -62,6 +62,19 @@
 				</a>
 			</div>
 
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-4"><h1>I'm</h1></div>
+				<div class="w-100"></div>
+					<div class="col-5">
+						<h1 class="fullname">Roman Goloveshkin</h1>
+						
+					</div>
+					<div class="w-100"></div>
+					<div class="col-4" id="example">
+					</div>
+				</div>
+			</div>
 			
 			<!-- <div class="container" id="social_site">
 				<div class="row align-items-center">
@@ -72,16 +85,13 @@
 					<div class="col col-lg-2">
 						<a href="https://vk.com/id111988133" class="vkontakte">кккккккккккккккккккккккккккqt</a>
 					</div>
-					
-				</div>
-				
+				</div>				
 			</div> -->
-
 		</header>
 		
 		<!--Секция "об о мне"-->
 		
-			<div class="container-fluid">
+		<div class="container-fluid">
   				<div class="row " id="aboutme">
    			 		<div class="col-6" id="ImageInEducation"></div>
     		 		<div class="col-6">Another Text</div>
@@ -96,48 +106,73 @@
     		 	<div class="col-6">Another Text1</div>
    			</div>
 	
+
+	
 		
-		<!--Секция "Образование и знаний"-->	
+		<!--Секция "Образование и знаний"-->
+
   			<div class="row " id="education">
    			 	<div class="col-6" id="ImageInWins"></div>
-    		 	<div class="col-6">Another Text2</div>
+    		 	<div class="col-6">
+
+<div id="example">
+						Тут Ваш текст, который будет появляться.
+						Строка за строкой, с плавным эффектом.
+						Все это возможно при помощи
+						jQuery и CSS.</div>
+
+    		 	</div>
    			</div>
    		</div>
 		 
 		
 
-		<section id="contact">
-			 <div class="view">
+		<!--Секция "Связи со мной"-->
+  		<div class="view" id="contact">
     		<!--Intro content-->
-		    	<div class="full-bg-img flex-center">
-		        	<ul>
-		           	 	<li>
-		             		<h1 class="h1-responsive">
-		             	   <!-- Заголовок -->
-		             		</h1>
-		             	</li> 
-
-		          	  	<li>
-		          	     	<p>
-		          	      	<!-- В контекст -->
-		          	      	</p>
-		          	 	</li>
-
-		          	  	<li>
-		          	      <!-- <a target="_blank" href="https://mdbootstrap.com/getting-started/" class="btn btn-primary btn-lg">Sign up!</a> -->
-		          	      <!-- <a target="_blank" href="https://mdbootstrap.com/material-design-for-bootstrap/" class="btn btn-default btn-lg">Learn more</a> -->
-		          	 	</li>
-		      		</ul>
-		    	</div>
+		   	<div class="full-bg-img flex-center"> </div>
     						<!--/Intro content-->
-			</div>
-		</section> <!--Секция "Связи со мной"-->
+		</div>
+		
 
 		
 		<footer class="footer">
 		Hello
 		<!--Content-->
 		</footer> <!--Подвал-->
-	
+		
+
+<script type="text/javascript">
+	var texts = new Array();
+	var numtext = 0;
+
+	texts[0]="Web Developer";
+	texts[1]="Coder";
+	texts[2]="Web-designer";
+
+
+	$(document).ready(function(){
+		$.fn.animate_Text = function(string) {
+	  // var string = this.text();
+			return this.each(function(){
+		  		var $this = $(this);
+		   		$this.html(string.replace(/./g, '<span class="new">$&</span>'));
+		   		$this.find('span.new').each(function(i, el){
+		    		setTimeout(function(){ $(el).addClass('div_opacity'); }, 40 * i);
+		   		});
+		  	});
+	 	};
+	$('#example').show();
+	 Cicle();
+	});
+
+	function Cicle(){
+		$('#example').animate_Text(texts[numtext]);
+		numtext++;
+	 if (numtext>=texts.length) numtext=0;
+	 setTimeout(Cicle, 1900);
+	}
+</script>	
 	</body>
 </html>
+

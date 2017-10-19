@@ -154,7 +154,8 @@ width: 50%;
 
 #home{
 	background-size: cover;
-	background-image: url(../image/MainMenu.jpg);
+	background-image: url("http://www.braciaprzykawie.pl/wp-content/uploads/2016/11/bracia-przy-kawie-7-pytan-cel-zycia-wizja.jpg");
+	position: relative;
 }
 
 #aboutme{
@@ -178,6 +179,9 @@ width: 50%;
 
 
 
+}
+
+#ImageInHome{
 }
 
 #contact{
@@ -210,9 +214,14 @@ body,
 	background: #eee;
 	
 }
-.col-5 {
-	background:grey;
+.col-4,
+.col-2,
+.col-5 { 
+top:130px;
+/*background-color: green;	*/
 }
+
+
 
 .container{
 
@@ -222,5 +231,18 @@ body,
 	/*background-image: url(../image/vkontakte.png);*/
 	/*background-size: cover;*/
 /*}*/
+.fullname{
+	color:white;
+	top: 40%;
+}
 
 
+#example{padding:0px 0px 0px 100px;display:none;}
+#example .new{opacity: 0;}
+#example .div_opacity{
+  -webkit-transition: opacity .1s ease-in-out;
+  -moz-transition: opacity .1s ease-in-out;
+  -ms-transition: opacity .1s ease-in-out;
+  -o-transition: opacity .1s ease-in-out;
+  transition: opacity .1s ease-in-out;
+  opacity: 1;}
