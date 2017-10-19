@@ -155,20 +155,13 @@ width: 50%;
 #home{
 	background-size: cover;
 	background-image: url(../image/MainMenu.jpg);
-	height: 100%;
 }
 
 #aboutme{
-	background-size: cover;
-	background-image: url(../image/background.jpg);
-	height: 100%;
 
 }
 
 #wins{
-	background-size: cover;
-	background-image: url(../image/background1.jpg);
-	height: 100%;
 }
 
 #ImageInWins{
@@ -177,7 +170,6 @@ width: 50%;
 }
 
 #education{
-	height: 100%;
 }
 
 #ImageInEducation{
@@ -189,7 +181,6 @@ width: 50%;
 }
 
 #contact{
-	height: 100%;
 }
 
 .footer{
@@ -206,6 +197,7 @@ html,
 body,
 .view {
     height: 100%;
+    padding: 0;
 
 }
 
@@ -216,7 +208,7 @@ body,
 
 .col-6{
 	background: #eee;
-	height: 1000px;
+	
 }
 .col-5 {
 	background:grey;

@@ -16,7 +16,8 @@
     </style>
 
 <!--Подключение библиотеки Jquire-->
-<script type="text/javascript" src="js/jquery-3.2.1.js"></script> 
+<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.5/esm/popper.min.js"></script>
 <!-- Подключение Boostrap -->
 <script type="text/javascript" src="js/bootstrap.js"></script>
 <!--Подключение файла с "якорем" и вращением-->
@@ -26,7 +27,7 @@
 
 </head>
 	<body>	
-		<header id="home" id="ImageInHome" > <!-- Главная "секция"-->
+		<header id="home" id="ImageInHome"  class="container-fluid"> <!-- Главная "секция"-->
 			<div id="wrapper" data-rotate="0">
 				<a href="javascript://0" data-scroll="#aboutme">  <!--Кнопка об о мне-->
 					<div class="button" id="bAboutme" data-rotate="0">
@@ -79,34 +80,30 @@
 		</header>
 		
 		<!--Секция "об о мне"-->
-		<section id="aboutme">
-			<div class="container-fluid" id="aboutme">
-  				<div class="row ">
+		
+			<div class="container-fluid">
+  				<div class="row " id="aboutme">
    			 		<div class="col-6" id="ImageInEducation"></div>
     		 		<div class="col-6">Another Text</div>
-   					<div class="w-100"></div>
    				</div>
-			</div> 	
-		</section>
+			 	
 
 
 		<!--Секция "Достижений и проделанных работ"--> 
-		<div class="container-fluid" id="wins">
-  			<div class="row ">
+	
+  			<div class="row " id="wins">
    			 	<div class="col-6" id="ImageInWins"></div>
     		 	<div class="col-6">Another Text1</div>
-   			 	<div class="w-100"></div>
    			</div>
-		</div>
+	
 		
-		<!--Секция "Образование и знаний"-->		
-		<div class="container-fluid" id="education">
-  			<div class="row ">
+		<!--Секция "Образование и знаний"-->	
+  			<div class="row " id="education">
    			 	<div class="col-6" id="ImageInWins"></div>
     		 	<div class="col-6">Another Text2</div>
-   			 	<div class="w-100"></div>
    			</div>
-		</div> 
+   		</div>
+		 
 		
 
 		<section id="contact">
