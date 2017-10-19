@@ -159,11 +159,20 @@ width: 50%;
 }
 
 #aboutme{
+	
+
+}
+
+#ImageInAboutMe{
+	background: url("https://petapixel.com/assets/uploads/2015/11/manwithbeard_2.jpg")no-repeat center center ;
+    background-size: cover;
 
 }
 
 #wins{
 }
+
+
 
 #ImageInWins{
 	background: url("http://widefon.com/_ld/20/62654251.jpg")no-repeat center center ;
@@ -217,7 +226,8 @@ body,
 .col-4,
 .col-2,
 .col-5 { 
-top:130px;
+top:230px;
+font-size:4;
 /*background-color: green;	*/
 }
 
@@ -237,12 +247,13 @@ top:130px;
 }
 
 
-#example{padding:0px 0px 0px 100px;display:none;}
-#example .new{opacity: 0;}
+#example{padding:0px 0px 0px 100px;display:none;font-size:30pt;}
+#example .new{opacity: 0; font-size:5;}
 #example .div_opacity{
   -webkit-transition: opacity .1s ease-in-out;
   -moz-transition: opacity .1s ease-in-out;
   -ms-transition: opacity .1s ease-in-out;
   -o-transition: opacity .1s ease-in-out;
   transition: opacity .1s ease-in-out;
-  opacity: 1;}
+  opacity: 1;font-size:4;
+   }
