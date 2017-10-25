@@ -12,6 +12,7 @@ $(function(){
 	});
 
 	WinResize();
+	ScrlSpy();
 		
 });
 
@@ -31,3 +32,5 @@ function WinResize() {
 	 $('#education').height($(window).height());
 	 $('#contact').height($(window).height());
 }
+
+

@@ -116,16 +116,6 @@ z-index: 1;
 
 
 
-
-
-
-
-
-
-
-
-
-
 #button5:hover{
 	background-color: rgb(255,255,255);
 }
@@ -158,6 +148,11 @@ width: 50%;
 	position: relative;
 }
 
+#ImageInHome{
+
+}
+
+
 #aboutme{
 	
 
@@ -166,6 +161,7 @@ width: 50%;
 #ImageInAboutMe{
 	background: url("https://petapixel.com/assets/uploads/2015/11/manwithbeard_2.jpg")no-repeat center center ;
     background-size: cover;
+    /*position: fixed;*/
 
 }
 
@@ -190,8 +186,6 @@ width: 50%;
 
 }
 
-#ImageInHome{
-}
 
 #contact{
 }
@@ -223,9 +217,12 @@ body,
 	background: #eee;
 	
 }
-.col-4,
+
 .col-2,
-.col-5 { 
+.col-4,
+.col-5,
+.col-7,
+.col-12 { 
 top:230px;
 font-size:4;
 /*background-color: green;	*/
@@ -255,5 +252,19 @@ font-size:4;
   -ms-transition: opacity .1s ease-in-out;
   -o-transition: opacity .1s ease-in-out;
   transition: opacity .1s ease-in-out;
-  opacity: 1;font-size:4;
+  opacity: 1;
+  font-size:4;
    }
+
+.download{
+	
+}
+
+#share{
+	font-size: 40pt;
+	padding-left: 15%;
+	margin-top: 5%;
+	letter-spacing: 1em;
+}
+
+
