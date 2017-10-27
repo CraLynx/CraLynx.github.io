@@ -121,11 +121,10 @@ z-index: 1;
 }
 
 .button{
-cursor: pointer;
-position: absolute;
-height: 50%;
-width: 50%;
-
+	cursor: pointer;
+	position: absolute;
+	height: 50%;
+	width: 50%;
 }
 
 .button span {
@@ -143,9 +142,11 @@ width: 50%;
 }
 
 #home{
-	background-size: cover;
-	background-image: url("http://www.braciaprzykawie.pl/wp-content/uploads/2016/11/bracia-przy-kawie-7-pytan-cel-zycia-wizja.jpg");
-	position: relative;
+	background-image: url(../image/Home.jpg);
+    background-attachment: fixed;
+    /*background-position: center;*/
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #ImageInHome{
@@ -159,10 +160,8 @@ width: 50%;
 }
 
 #ImageInAboutMe{
-	background: url("https://petapixel.com/assets/uploads/2015/11/manwithbeard_2.jpg")no-repeat center center ;
+	background: url("https://petapixel.com/assets/uploads/2015/11/manwithbeard_2.jpg")no-repeat center center ; 
     background-size: cover;
-    /*position: fixed;*/
-
 }
 
 #wins{
@@ -179,7 +178,7 @@ width: 50%;
 }
 
 #ImageInEducation{
-	background: url("http://widefon.com/_ld/20/62654251.jpg")no-repeat center center fixed;
+	background: url("http://widefon.com/_ld/20/62654251.jpg")no-repeat center center;
 
 
 
@@ -223,9 +222,8 @@ body,
 .col-5,
 .col-7,
 .col-12 { 
-top:230px;
-font-size:4;
-/*background-color: green;	*/
+	top:230px;
+	font-size:4;
 }
 
 
@@ -234,10 +232,7 @@ font-size:4;
 
 	
 }
-/*.vkontakte{*/
-	/*background-image: url(../image/vkontakte.png);*/
-	/*background-size: cover;*/
-/*}*/
+
 .fullname{
 	color:white;
 	top: 40%;
@@ -254,17 +249,60 @@ font-size:4;
   transition: opacity .1s ease-in-out;
   opacity: 1;
   font-size:4;
-   }
+}
 
-.download{
+#share a,#share a i{
+	color:black;
+	display:  inline-block;
+	font-size: 40pt;
+	margin: 5% 10% 0 0%;
+	line-height: 1;
 	
 }
 
 #share{
+	margin-left: 30%;
+}
+
+#share a i:hover{
+	color: white;
+	display:  inline-block;
 	font-size: 40pt;
-	padding-left: 15%;
-	margin-top: 5%;
-	letter-spacing: 1em;
+	margin: 5% 10% 0 0%;
+	line-height: 1;
+	transform: scale(1.1) rotate(15deg);
+	transition: 0.7s;
+	
+}
+
+.Resume {
+  outline: none;
+  display: inline-block;
+  margin: 10px 20px;
+  padding: 10px 30px;
+  position: relative;
+  border: 2px solid #f1c40f;
+  color: #f1c40f;
+  font-family: 'Montserrat', sans-serif; 
+  transition: .4s;
+}
+.Resume:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  border: 2px solid rgba(0,0,0,0);
+  transition: .4s;
+}
+.downloadbutton a:hover:after {
+  border-color: #f1c40f;
+  width: calc(100% - 10px);
+  height: calc(100% + 10px);
 }
 
 
