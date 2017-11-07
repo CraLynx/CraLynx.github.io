@@ -226,7 +226,7 @@ body,
 .photo1{
 	transition: 0.7s;
 	filter: grayscale(100%);
-	background-image: url(../image/photo1.jpg);
+	background-image: url(../image/dezert.jpg);
 	height: 150px;
 	width: auto;
 	background-size: cover;
