@@ -1,0 +1,427 @@
+#wrapper {
+	border-radius: 50%;
+	height: 180px;
+	width: 180px;
+	overflow: hidden;
+	position: fixed;
+	top:25px;
+	left:25px;
+	transform: rotate(0deg);
+	transition: 1s;
+}
+
+#wrapper[data-rotate='90']{
+	transform: rotate(90deg);
+}
+
+#wrapper{
+z-index: 1;
+}
+
+@media (max-width: 780px) {
+	#wrapper{
+	height: 150px;
+	width: 150px;
+	}
+}
+@media (max-width: 420px) {
+	#wrapper{
+	height: 150px;
+	width: 150px;
+	left:calc(50% - 75px);
+	}
+}
+
+#bAboutme {
+	background-color: red;
+ 	border: 1px solid black;
+ 	border-top-left-radius: 100%;
+ 	top: 0;
+ 	left:0;
+
+}
+#bAboutme span{
+	background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;    
+ 	background-image: url(../image/Me.png);
+
+}
+
+#bWins{
+	background-color: black;
+ 	border: 1px solid black;
+ 	border-top-right-radius: 100%;
+ 	top: 0;
+ 	right:0;
+}
+
+#bWins span{
+	background-size: 35%;
+    background-repeat: no-repeat;
+    background-position: 55% 55%;
+ 	background-image: url(../image/Cup.png);
+
+}
+
+#bEducation{
+    background:white;
+ 	border: 1px solid black;
+ 	border-bottom-right-radius: 100%;
+ 	bottom:  0;
+ 	right: 0;
+}
+#bEducation span{
+	background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: 55% 55%;
+ 	background-image: url(../image/sahap.png);
+
+}
+
+#bContact{
+	background-color: black;
+ 	bottom:0;
+ 	left:0;
+ 	border: 1px solid black;
+ 	border-bottom-left-radius: 100%;
+
+}
+
+#bContact span{
+	background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+ 	background-image: url(../image/Phone.png);
+
+}
+
+#bHome{
+	border-radius: 50%;
+	background-color: rgb(161, 149, 149);
+ 	border-color: black; 
+ 	overflow:hidden;
+ 	transition: 1s;
+ 	top: 25%;
+    left: 25%;
+}
+
+#bHome span{
+	background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+ 	background-image: url(../image/Home.png);
+
+}
+
+
+
+#button5:hover{
+	background-color: rgb(255,255,255);
+}
+
+.button{
+	cursor: pointer;
+	position: absolute;
+	height: 50%;
+	width: 50%;
+}
+
+.button span {
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    transform: 0;
+    transition: 1s;
+}
+
+.button:hover{
+	transform: scale(1.1);
+	
+}
+
+#home{
+	background-image: url(../image/home.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1px;
+
+ 
+}
+
+#ImageInHome{
+
+}
+
+
+#aboutme{
+	
+
+}
+
+#ImageInAboutMe{
+	background: url("https://petapixel.com/assets/uploads/2015/11/manwithbeard_2.jpg"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#wins{
+}
+
+
+
+#ImageInWins{
+	background: url("http://widefon.com/_ld/20/62654251.jpg")no-repeat center center ;
+    background-size: cover;
+}
+
+#education{
+}
+
+#ImageInEducation{
+	background: url("http://widefon.com/_ld/20/62654251.jpg")no-repeat center center;
+
+
+
+
+}
+
+
+#contact{
+	background-color: white;
+}
+
+.footer{
+	height: 62px;
+	width: 100px;
+    margin-bottom: 48px;
+    color: #303030;
+    font-size: 14px;
+    text-align: center;
+    position: relative
+}
+
+html,
+body,
+.view {
+    height: 100%;
+    padding: 0;
+
+}
+
+.view {
+    background: url("http://widefon.com/_ld/20/62654251.jpg")no-repeat center center;
+    background-size: cover;
+}
+
+.col-md-6{
+	background: #eee;
+	
+}
+
+.photo1{
+	transition: 0.7s;
+	filter: grayscale(100%);
+	background-image: url(../image/photo1.jpg);
+	height: 150px;
+	width: auto;
+	background-size: cover;
+	background-position: center;
+	margin-top: 5%;
+}
+
+.photo2{
+
+	background-image: url(../image/mainweb.JPG);
+	height: 150px;
+	width: auto;
+	background-size: cover;
+	background-position: center;
+	margin-top: 5%;
+
+}
+
+.photo1:hover{
+	filter: grayscale(0);
+}
+
+.col-md-2,
+.col-md-4,
+.col-md-5,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-12 { 
+	
+	font-size:4;
+	}
+.col-md-2 h1, .col-md-7 h1{
+	font-size: 50pt;
+}
+
+.col-md-2 h1{
+	margin-top: 100%;
+}
+.col-md-3{
+	width: 200px;
+	height: 200px;
+}
+
+@media (max-width: 780px) {
+	.col-md-2 h1,
+	.col-md-7 h1{
+		font-size: 25pt;
+	}
+}
+
+@media (min-width: 781px) and (max-width: 992px) {
+  /* Стили для устройств с шириной viewport, находящейся в диапазоне 992px - 1199px */
+  .col-md-2 h1,
+  .col-md-7 h1{
+		font-size: 30pt;
+   }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  /* Стили для устройств с шириной viewport >1200px */
+  .col-md-2 h1,
+  .col-md-7 h1{
+		font-size: 35pt;
+   }
+}
+
+
+
+/*Для секции обо мне(текст)*/
+
+@media (max-width: 780px) {
+ .col-md-9{
+		margin-left: 5%;
+
+   }
+}
+
+@media (min-width: 781px) and (max-width: 992px) {
+  /* Стили для устройств с шириной viewport, находящейся в диапазоне 992px - 1199px */
+  .col-md-9{
+		margin-left: 4%;
+
+   }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  /* Стили для устройств с шириной viewport >1200px */
+  .col-md-9{
+		margin-left: 8%;
+
+   }
+}
+@media (min-width: 1201px) { 
+.col-md-9{
+		margin-left: 8%;
+
+   }
+}
+
+
+
+#share a,#share a i{
+	color:black;
+	display:  inline-block;
+	font-size: 40pt;
+	margin: 17% 13% 0 0%;
+	line-height: 1;
+	
+}
+
+#share{
+	margin:2% 0 0 10%;
+
+}
+
+#share a i:hover{
+	color: white;
+	display:  inline-block;
+	font-size: 40pt;
+
+	line-height: 1;
+	transform: scale(1.1) rotate(15deg);
+	transition: 0.7s;
+	
+}
+
+
+
+
+
+.form-group,
+#arriveletter{
+	padding: 1% 0 0 0;
+	margin-left: 27%;
+}
+
+#firstinputelement{
+	margin-top: 7%;
+}
+
+
+
+
+.container{
+
+	
+}
+
+.fullname{
+	color:white;
+}
+
+
+#example{padding:0px 0px 0px 100px;display:none;font-size:30pt;}
+#example .new{opacity: 0; font-size:5;}
+#example .div_opacity{
+  -webkit-transition: opacity .1s ease-in-out;
+  -moz-transition: opacity .1s ease-in-out;
+  -ms-transition: opacity .1s ease-in-out;
+  -o-transition: opacity .1s ease-in-out;
+  transition: opacity .1s ease-in-out;
+  opacity: 1;
+  font-size:4;
+}
+
+
+.Resume {
+  outline: none;
+  display: inline-block;
+  margin: 10px 20px;
+  padding: 10px 30px;
+  position: relative;
+  border: 2px solid #f1c40f;
+  color: #f1c40f;
+  font-family: 'Montserrat', sans-serif; 
+  transition: .4s;
+}
+.Resume:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  border: 2px solid rgba(0,0,0,0);
+  transition: .4s;
+}
+.downloadbutton a:hover:after {
+  border-color: #f1c40f;
+  width: calc(100% - 10px);
+  height: calc(100% + 10px);
+}
+
+
