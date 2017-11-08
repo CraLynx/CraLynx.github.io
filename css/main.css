@@ -142,11 +142,14 @@ z-index: 1;
 }
 
 #home{
-	background-image: url(../image/Home.jpg);
+	background-image: url(../image/home.jpg);
     background-attachment: fixed;
-    /*background-position: center;*/
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 1px;
+
+ 
 }
 
 #ImageInHome{
@@ -160,7 +163,9 @@ z-index: 1;
 }
 
 #ImageInAboutMe{
-	background: url("https://petapixel.com/assets/uploads/2015/11/manwithbeard_2.jpg")no-repeat center center ; 
+	background: url("https://petapixel.com/assets/uploads/2015/11/manwithbeard_2.jpg"); 
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
@@ -187,6 +192,7 @@ z-index: 1;
 
 
 #contact{
+	background-color: white;
 }
 
 .footer{
@@ -212,19 +218,162 @@ body,
     background-size: cover;
 }
 
-.col-6{
+.col-md-6{
 	background: #eee;
 	
 }
 
-.col-2,
-.col-4,
-.col-5,
-.col-7,
-.col-12 { 
-	top:230px;
-	font-size:4;
+.photo1{
+	transition: 0.7s;
+	filter: grayscale(100%);
+	background-image: url(../image/photo1.jpg);
+	height: 150px;
+	width: auto;
+	background-size: cover;
+	background-position: center;
+	margin-top: 5%;
 }
+
+.photo2{
+
+	background-image: url(../image/mainweb.JPG);
+	height: 150px;
+	width: auto;
+	background-size: cover;
+	background-position: center;
+	margin-top: 5%;
+
+}
+
+.photo1:hover{
+	filter: grayscale(0);
+	transform: scale(1.1) rotate(15deg);
+
+}
+.col-md-4:nth-child(2n) .photo1:hover{
+	transform: scale(1.1) rotate(-15deg);
+	 
+}
+
+.col-md-2,
+.col-md-4,
+.col-md-5,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-12 { 
+	
+	font-size:4;
+	}
+.col-md-2 h1, .col-md-7 h1{
+	font-size: 50pt;
+}
+
+.col-md-2 h1{
+	margin-top: 100%;
+}
+.col-md-3{
+	width: 200px;
+	height: 200px;
+}
+
+@media (max-width: 780px) {
+	.col-md-2 h1,
+	.col-md-7 h1{
+		font-size: 25pt;
+	}
+}
+
+@media (min-width: 781px) and (max-width: 992px) {
+  /* Стили для устройств с шириной viewport, находящейся в диапазоне 992px - 1199px */
+  .col-md-2 h1,
+  .col-md-7 h1{
+		font-size: 30pt;
+   }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  /* Стили для устройств с шириной viewport >1200px */
+  .col-md-2 h1,
+  .col-md-7 h1{
+		font-size: 35pt;
+   }
+}
+
+
+
+/*Для секции обо мне(текст)*/
+
+@media (max-width: 780px) {
+ .col-md-9{
+		margin-left: 5%;
+
+   }
+}
+
+@media (min-width: 781px) and (max-width: 992px) {
+  /* Стили для устройств с шириной viewport, находящейся в диапазоне 992px - 1199px */
+  .col-md-9{
+		margin-left: 4%;
+
+   }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  /* Стили для устройств с шириной viewport >1200px */
+  .col-md-9{
+		margin-left: 8%;
+
+   }
+}
+@media (min-width: 1201px) { 
+.col-md-9{
+		margin-left: 8%;
+
+   }
+}
+
+
+
+#share a,#share a i{
+	color:black;
+	display:  inline-block;
+	font-size: 40pt;
+	margin: 17% 13% 0 0%;
+	line-height: 1;
+	
+}
+
+#share{
+	margin:2% 0 0 10%;
+
+}
+
+#share a i:hover{
+	color: white;
+	display:  inline-block;
+	font-size: 40pt;
+
+	line-height: 1;
+	transform: scale(1.1) rotate(15deg);
+	transition: 0.7s;
+	
+}
+
+
+
+
+
+.form-group,
+#arriveletter{
+	padding: 1% 0 0 0;
+	margin-left: 27%;
+}
+
+#firstinputelement{
+	margin-top: 7%;
+}
+
 
 
 
@@ -235,7 +384,6 @@ body,
 
 .fullname{
 	color:white;
-	top: 40%;
 }
 
 
@@ -251,29 +399,6 @@ body,
   font-size:4;
 }
 
-#share a,#share a i{
-	color:black;
-	display:  inline-block;
-	font-size: 40pt;
-	margin: 5% 10% 0 0%;
-	line-height: 1;
-	
-}
-
-#share{
-	margin-left: 30%;
-}
-
-#share a i:hover{
-	color: white;
-	display:  inline-block;
-	font-size: 40pt;
-	margin: 5% 10% 0 0%;
-	line-height: 1;
-	transform: scale(1.1) rotate(15deg);
-	transition: 0.7s;
-	
-}
 
 .Resume {
   outline: none;

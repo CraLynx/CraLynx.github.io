@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 
 	
-	<script src="https://cdn.jsdelivr.net/npm/goodshare.js@4/goodshare.min.js"></script>
+	
 	<style>
 		body {
 			padding: 0; 
@@ -30,20 +30,14 @@
     </style>
 
 <!--Подключение библиотеки Jquire-->
-
-
 <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
-<!-- Подключение Boostrap -->
-<script type="text/javascript" src="js/bootstrap.js"></script>
-<!--Подключение файла с "якорем" и вращением-->
-<script type="text/javascript" src="js/main.js"></script>
+
 
 
 
 
 </head>
-	<body data-spy="scroll" ">	
-
+	<body data-spy="scroll" ">
 						<!-- Главная "секция"-->
 
 		<header id="home" id="ImageInHome"  class="container-fluid"> 
@@ -83,20 +77,20 @@
 
 			<div class="container">
 				<div class="row justify-content-center">
-					<div class="col-4"><h1>I'm</h1></div>
+					<div class="col-md-2"><h1>I'm</h1></div>
 					<div class="w-100"></div>
-					<div class="col-5">
+					<div class="col-md-7">
 						<h1 class="fullname">Roman Goloveshkin</h1>
 					</div>
 					<div class="w-100"></div>
-					<div class="col-4" id="example"></div>
+					<div class="col-md-4" id="example"></div>
 				</div>
 
 				<!--Ссылки на соц.ресурсы-->
 				
 				<div class="row justify-content-center">
 					<div class="w-100"></div>
-					<div class="col-12" id="share">
+					<div class="col-md-9" id="share">
 						<!--Vkontakte-->
 						<a href="https://vk.com/id111988133	" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a>  
 						<!--Facebook-->
@@ -105,12 +99,8 @@
 						<a href="https://github.com/CraLynx	" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
 						<!--Google+-->
 						<a href="https://plus.google.com/u/0/117775744209917570060" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-<<<<<<< HEAD
 						<!--Inst-->
 						<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-=======
-						<a href="https://github.com/CraLynx	"><i class="fa fa-instagram" aria-hidden="true"></i></a>
->>>>>>> c80a8ac9a6bf804e9470110d0691a30fbe5e22ed
 					</div>
 				</div>
 			</div>
@@ -121,15 +111,15 @@
 
 		<div class="container-fluid">
             <div class="row " id="aboutme">
-                <div class="col-6" id="ImageInAboutMe"></div>
-                <div class="col-6" id="scrollspy">
+                <div class="col-md-6" id="ImageInAboutMe"></div>
+                <div class="col-md-6" id="scrollspy">
                     <div class="navbar navbar-invese navbar-fixed-top" role="navigation">
                         <div class="container">
-                            <div>   <h1 class="navbar-header"></h1></div>
+                            <div><h1 class="navbar-header"></h1></div>
                         </div>
                     </div>
                 	<div class="row" style="margin-top:50px">
-                        <div class="col-md-2"></div>
+                        <!-- <div class="col-md-2"></div> -->
                         <div class="col-md-9" role="main">
                             <h3 id="overview">О себе</h3>
                             <p class="lead" style="text-indent: 10px;">
@@ -155,9 +145,37 @@
 		<!--Секция "Достижений и проделанных работ"--> 
 	
   			<div class="row " id="wins">
-   			 	<div class="col-6" id="ImageInWins"></div>
-    		 	<div class="col-6">
-    		 			
+   			 	<div class="col-md-6" id="ImageInWins"></div>    		 	
+    		 	<div class="col-md-6">
+		    		<ul class="nav nav-tabs" style="margin-top: 5%;">
+		        		<li class="nav-item">
+		        			<a href="#photo" class="nav-link active" role="tab" data-toggle="tab">photo</a>
+		        		</li>
+
+		        		<li class="nav-item">
+		        			<a href="#web" class="nav-link" role="tab" data-toggle="tab">web</a>
+		        		</li>
+
+		        		<li class="nav-item">
+		        			<a href="#about" class="nav-link" role="tab" data-toggle="tab">Contact Us</a>
+		        		</li>
+		        	</ul>
+					<!--Фотоо-->
+		        	<div class="tab-content">
+		        		<div role="tabpanel" class="tab-pane active" id="photo">
+			        			<div class="row" id="photogalary">
+			        				
+								</div>	
+		        		</div>
+		        		<div role="tabpanel" class="tab-pane" id="web">
+							<div class="row">
+			        			<div class="col-md-4">
+									<div class="photo2" id="imposition"></div>										
+								</div>
+							</div>
+		        		</div>
+		        		<div role="tabpanel" class="tab-pane " id="about">3 23xxr23c5r</div>
+		        	</div>
     		 	</div>
    			</div>
 	
@@ -167,8 +185,8 @@
 		<!--Секция "Образование и знаний"-->
 
   			<div class="row " id="education">
-   			 	<div class="col-6" id="ImageInWins"></div>
-    		 	<div class="col-6">
+   			 	<div class="col-md-6" id="ImageInWins"></div>
+    		 	<div class="col-md-6">
 
     		 	</div>
    			</div>
@@ -176,30 +194,75 @@
 		
 
 			<!--Секция "Связи со мной"-->
-  			<div class="view" id="contact">
-    			<!--Intro content-->
-		   		<div class="full-bg-img flex-center"> </div>
-    						<!--/Intro content-->
+  			<div id="contact">
+  				<form>
+  					<div class="form-group" id="firstinputelement">
+		  					<hr align="center" width="100%" size="50" color="#dddddd" />
+		  						<label for="example-text-input" class="col-md-2 col-form-label">*Your Name</label>
+		  					<div class="col-md-5">
+		   				 		<input class="form-control" type="text" value="" placeholder="Your Name" id="example-text-input">
+		  					</div>
+						</div>
+						
+						<div class="form-group">
+		  						<label for="example-text-input" class="col-md-2 col-form-label">*Your E-mail</label>
+		  					<div class="col-md-5">
+		   				 		<input class="form-control" type="text" value="" placeholder="Your E-mail" id="example-text-input">
+		  					</div>
+						</div>
+						
+						<div class="form-group">
+		  						<label for="example-text-input" class="col-md-2 col-form-label">Phone</label>
+		  					<div class="col-md-5">
+		   				 		<input class="form-control" type="text" value="" placeholder="Phone number" id="example-text-input">
+		  					</div>
+						</div>
+						
+						<div class="form-group">
+		  						<label for="example-text-input" class="col-md-2 col-form-label">Company Name</label>
+		  					<div class="col-md-5">
+		   				 		<input class="form-control" type="text" value="" placeholder="Company Name" id="example-text-input">
+		  					</div>
+						</div>
+						
+						<div class="form-group col-md-5">
+	    					<label for="exampleTextarea">Your message</label>
+	    					<textarea class="form-control" id="exampleTextarea" col="" rows="3" placeholder="Message"></textarea>
+	  					</div>
+	  					<button class="btn btn-secondary"  type="submit" style="margin-left: 45%;">Submit form</button>
+	  			</form>
 			</div>
 		</div>
-		
 
-		
+
+		<div class="modal fade" style="top: 5%;" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModal" aria-hidden="true">
+			<div class="modal-dialog" style="max-width: 800px; height: auto;" role="document">
+				<div class="modal-content">
+					<div class="modal-header"> 
+						<h5 class="modal-title" id="exampleModalLabel">Image</h5>
+						 
+					</div>
+					<div class="modal-body">
+     				 </div>
+				</div>
+			</div>
+		</div>
+
+
 		<footer class="footer">
 		Hello
 		<!--Content-->
 		</footer> <!--Подвал-->
 		
+<!-- Подключение Boostrap -->
+<script type="text/javascript" src="js/bootstrap.js"></script>
+
+<!--Подключение файла с "якорем" и вращением-->
+<script type="text/javascript" src="js/main.js"></script>
 
 		<script type="text/javascript">
-			var texts = new Array();
+			var texts = ["Web Developer","Coder","Web-designer","Coffee Lover"];
 			var numtext = 0;
-
-			texts[0]="Web Developer";
-			texts[1]="Coder";
-			texts[2]="Web-designer";
-			texts[3]="Coffee Lover";
-
 
 			$(document).ready(function(){
 				$.fn.animate_Text = function(string) {
