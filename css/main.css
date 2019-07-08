@@ -227,7 +227,6 @@ body,
 .photo1{
 	transition: 0.7s;
 	filter: grayscale(100%);
-	background-image: url(../image/photo1.jpg);
 	height: 150px;
 	width: auto;
 	background-size: cover;
@@ -237,7 +236,7 @@ body,
 
 .photo2{
 
-	background-image: url(../image/mainweb.JPG);
+	background-image: url(../image/SectionWins/Photo/Lake.JPG);
 	height: 150px;
 	width: auto;
 	background-size: cover;

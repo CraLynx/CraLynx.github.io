@@ -1,10 +1,10 @@
 //Массив-объектов для карттинок
 var pictures = [
-				{text:"somethingtext8", image:"image/photo1.jpg"},
-				{text:"somet hingtext", image:"image/mainweb.jpg"},
-				{text:"somet hingtext", image:"image/mainweb.jpg"},
-				{text:"стена", image:"image/background1.jpg"},
-				{text:"somet hingtext", image:"image/mainweb.jpg"}
+				{text:"Озеро. г. Балашиха.", image:"image/SectionWins/Photo/Lake.jpg"},
+				{text:"Заросшая речка. Владимирская обл., п. Пакино.", image:"image/SectionWins/Photo/Swamp.jpg"},
+				// {text:"somet hingtext", image:"image/mainweb.jpg"},
+				// {text:"стена", image:"image/background1.jpg"},
+				// {text:"somet hingtext", image:"image/mainweb.jpg"}
 			];
 
 $(function(){
